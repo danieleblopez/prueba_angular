@@ -1,0 +1,32 @@
+<table>
+    <thead>
+        <th>email</th>
+        <th>first_name</th>
+        <th>id</th>
+        <th>last_name</th>
+        <th>n_document</th>
+        <th>phone_number</th>
+    </thead>
+    <tbody *ngFor="let each of jsonItems">
+        <tr>
+            <td>
+                {{each.email}} 
+            </td>
+            <td>
+                {{each.first_name}} 
+            </td>
+            <td>
+                {{each.id}} 
+            </td>
+            <td>
+                {{each.last_name}} 
+            </td>
+            <td>
+                {{each.n_document}} 
+            </td>
+            <td>
+                {{each.phone_number}} 
+            </td>
+          </tr>
+    </tbody>
+</table>
